@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+
+    <title>Yep. Studio</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="beforeLoad">
+        <div class="load"></div>
+    </div>
+
+    <header class="container">
+        <div class="col-12 d-flex justify-content-center justify-content-md-start">
+            <img class="logo" src="./img/Logo.svg" alt="logo">
+            <div class="autotext d-none d-md-block"></div>
+        </div>
+    </header>
+
+    <section id="games" class="container">
+        <div class="row">
+            <div class="mainGame col-xl-10 col-lg-12">
+                <img src="./img/games/Elder Force.png" alt="Elder Force">
+                <a href="#" class="buy" style="right:15px">
+                    <img src="./img/games/buy.svg" alt="buy">
+                </a>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus commodo iaculis suspendisse id malesuada. Id mattis elit, pulvinar ornare ut pellentesque et purus. 
+                </div>
+            </div>
+
+            <div class="col-2 row d-none d-xl-block" style="padding: 0;">
+                <div class="col-12 otherGames gameMin">
+                    <img src="./img/games/When dark is coming.png" alt="When dark is coming">
+                    <a href="#" class="buy">
+                        <img src="./img/games/buy.svg" alt="buy">
+                    </a>
+                    <div class="gameMinName">When dark is coming</div>
+                </div>
+
+                <div class="col-12 otherGames gameMin">
+                    <img src="./img/games/Litlle God.png" alt="Litlle God">
+                    <a href="#" class="buy">
+                        <img src="./img/games/buy.svg" alt="buy">
+                    </a>
+                    <div class="gameMinName">Litlle God</div>
+                </div>
+
+                <div class="col-12 otherGames gameMin">
+                    <img src="./img/games/VELA.png" alt="Space sity">
+                    <a href="#" class="buy">
+                        <img src="./img/games/buy.svg" alt="buy">
+                    </a>
+                    <div class="gameMinName">V.E.L.A.</div>
+                </div>
+            </div>
+
+            <div class="d-flex d-xl-none col-12 row" style="padding: 0;">
+                <div class="col-4 otherGames gameMin">
+                    <img src="./img/games/When dark is coming.png" alt="When dark is coming">
+                    <a href="#" class="buy">
+                        <img src="./img/games/buy.svg" alt="buy">
+                    </a>
+                    <div class="gameMinName">When dark is coming</div>
+                </div>
+
+                <div class="col-4 otherGames gameMin">
+                    <img src="./img/games/Litlle God.png" alt="Litlle God">
+                    <a href="#" class="buy">
+                        <img src="./img/games/buy.svg" alt="buy">
+                    </a>
+                    <div class="gameMinName">Litlle God</div>
+                </div>
+
+                <div class="col-4 otherGames gameMin">
+                    <img src="./img/games/VELA.png" alt="Space sity">
+                    <a href="#" class="buy">
+                        <img src="./img/games/buy.svg" alt="buy">
+                    </a>
+                    <div class="gameMinName">V.E.L.A.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="container">
+        <div class="row">
+            <div class="sectionHeader col-12">
+                <div class="newsColorLine d-flex">
+                    <img src="./img/news/News.svg" alt="news">
+                    <h2>What’s new?</h2>
+                </div>
+            </div>
+            <div class="newsPiece col-12 col-md-6 col-xl-4">
+                <a style="background: url('./img/news/news-img-1.png') no-repeat center 0%;" onmouseenter="showNews(this)" onmouseleave="hideNews(this)" href="#">
+                  <div class="info">
+                    <time>may 27, 2021</time>
+                    <h3>New sale record</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus commodo iaculis suspendisse id malesuada. Id mattis elit, pulvinar ornare ut pellentesque et purus. </p>
+                    <div class="newsPieceFooter">
+                        <div class="black"></div>
+                        <span class="read">Read more >></span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="newsPiece col-12 col-md-6 col-xl-4">
+                <a style="background: url('./img/news/news-img-2.png') no-repeat center 0%;" onmouseenter="showNews(this)" onmouseleave="hideNews(this)" href="#">
+                  <div class="info">
+                    <time>may 19, 2021</time>
+                    <h3>Opened office in Ukraine</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus commodo iaculis suspendisse id malesuada. Id mattis elit, pulvinar ornare ut pellentesque et purus. </p>
+                    <div class="newsPieceFooter">
+                        <div class="black"></div>
+                        <span class="read">Read more >></span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="newsPiece col-12 col-md-6 col-xl-4">
+                <a style="background: url('./img/news/news-img-3.png') no-repeat center 0%;" onmouseenter="showNews(this)" onmouseleave="hideNews(this)" href="#">
+                  <div class="info">
+                    <time>may 5, 2021</time>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus commodo iaculis suspendisse id malesuada. Id mattis elit, pulvinar ornare ut pellentesque et purus. </p>
+                    <div class="newsPieceFooter">
+                        <div class="black"></div>
+                        <span class="read">Read more >></span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="newsPiece d-none d-md-block col-12 col-md-6 col-xl-4">
+                <a style="background: url('./img/news/news-img-4.png') no-repeat center 0%;" onmouseenter="showNews(this)" onmouseleave="hideNews(this)" href="#">
+                  <div class="info">
+                    <time>apr 29, 2021</time>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus commodo iaculis suspendisse id malesuada. Id mattis elit, pulvinar ornare ut pellentesque et purus. </p>
+                    <div class="newsPieceFooter">
+                        <div class="black"></div>
+                        <span class="read">Read more >></span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="newsPiece d-none d-md-block col-12 col-md-6 col-xl-4">
+                <a style="background: url('./img/news/news-img-5.png') no-repeat center 0%;" onmouseenter="showNews(this)" onmouseleave="hideNews(this)" href="#">
+                  <div class="info">
+                    <time>apr 21, 2021</time>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus commodo iaculis suspendisse id malesuada. Id mattis elit, pulvinar ornare ut pellentesque et purus. </p>
+                    <div class="newsPieceFooter">
+                        <div class="black"></div>
+                        <span class="read">Read more >></span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="newsPiece d-none d-md-block col-12 col-md-6 col-xl-4">
+                <a style="background: url('./img/news/news-img-6.png') no-repeat center 0%;" onmouseenter="showNews(this)" onmouseleave="hideNews(this)" href="#">
+                  <div class="info">
+                    <time>apr 15, 2021</time>
+                    <h3>Lorem ipsum lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla purus commodo iaculis suspendisse id malesuada. Id mattis elit, pulvinar ornare ut pellentesque et purus. </p>
+                    <div class="newsPieceFooter">
+                        <div class="black"></div>
+                        <span class="read">Read more >></span>
+                    </div>
+                  </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="vacancies" class="talents container">
+        <div class="row">
+            <div class="sectionHeader col-12">
+                <div class="talentsColorLine d-flex">
+                    <img src="./img/talents/Talents.svg" alt="news">
+                    <h2>Looking for</h2>
+                </div>
+            </div>
+            <div class="talent col-12 col-md-6 col-xl-4">
+                <img src="./img/talents/1.png" alt="">
+                <h3 class="text-center text-md-left">
+                    <div class="d-none d-md-block blue"></div>
+                    Pixel artists
+                </h3>
+            </div>
+            <div class="talent col-12 col-md-6 col-xl-4">
+                <img src="./img/talents/2.png" alt="">
+                <h3 class="text-center text-md-left">
+                    <div class="d-none d-md-block blue"></div>
+                    C# developers
+                </h3>
+            </div>
+            <div class="talent col-12 col-md-6 col-xl-4">
+                <img src="./img/talents/3.png" alt="">
+                <h3 class="text-center text-md-left">
+                    <div class="d-none d-md-block blue"></div>
+                    Sound designers
+                </h3>
+            </div>
+            <div class="talent col-12 col-md-6 col-xl-4">
+                <img src="./img/talents/4.png" alt="">
+                <h3 class="text-center text-md-left">
+                    <div class="d-none d-md-block blue"></div>
+                    QA/Testers
+                </h3>
+            </div>
+            <div class="talent col-12 col-md-6 col-xl-4">
+                <img src="./img/talents/5.png" alt="">
+                <h3 class="text-center text-md-left">
+                    <div class="d-none d-md-block blue"></div>
+                    Level designers
+                </h3>
+            </div>
+            <div class="talent col-12 col-md-6 col-xl-4">
+                <img src="./img/talents/6.png" alt="">
+                <h3 class="text-center text-md-left">
+                    <div class="d-none d-md-block blue"></div>
+                    Analytics
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contactUs container">
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <div class="sectionHeader">
+                    <div class="d-flex contactUsColorLine">
+                        <img style="min-height: 100%" src="./img/contactUs/contactUs.svg" alt="news">
+                        <h2>Contact us</h2>
+                    </div>
+                </div>
+                <h3>Subscribe to our newsletter</h3>
+                <form action="">
+                    <input placeholder="Your E-mail Adress" type="email" name="email" id="email">
+                    <button>Subscribe</button>
+                </form>
+                <div class="social">
+                    <a target="_BLANK" href="https://www.instagram.com/sazdan98/">
+                        <div class="svgLogo Steam" alt="Steam"></div>
+                    </a>
+                    <a target="_BLANK" href="https://www.instagram.com/sazdan98/">
+                        <div class="svgLogo YouTube" alt="YouTube"></div>
+                    </a>
+                    <a target="_BLANK" href="https://www.instagram.com/sazdan98/">
+                        <div class="svgLogo Twitter" alt="Twitter"></div>
+                    </a>
+                    <a target="_BLANK" href="https://www.instagram.com/sazdan98/">
+                        <div class="svgLogo LinkedIn" alt="LinkedIn"></div>
+                    </a>
+                    <a target="_BLANK" href="https://www.instagram.com/sazdan98/">
+                        <div class="svgLogo Instagram" alt="Instagram"></div>
+                    </a>
+                    <a target="_BLANK" href="https://www.instagram.com/sazdan98/">
+                        <div class="svgLogo Facebook" alt="Facebook"></div>
+                    </a>
+                    
+                </div>
+            </div>
+            
+            <div class="col-12 col-lg-8">
+                <div class="mail">
+                    <h2>...or send us message</h2>
+                    <form class="row" action="">
+                        <div class="row col-12 col-lg-6">
+                            <input placeholder="Your Name" type="text" name="name" id="name">
+                            <input placeholder="Your E-mail Adress" type="email" name="email" id="email">
+                            <button>Send</button>
+                        </div>
+                        <div class="col-12 col-lg-6 order-first order-lg-last">
+                            <textarea placeholder="Your message" name="message" id="message"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <aside class="d-none d-xl-block">
+        <a href="#games">
+            <div class="navig current">
+                <div class="black"></div>
+                <div class="sectionName">Games</div>  
+                <div class="games sqr"></div>
+            </div>
+        </a>
+        <a href="#news">
+            <div class="navig">
+                <div class="black"></div>
+                <div class="sectionName">News</div>
+                <div class="news sqr"></div>
+            </div>
+        </a>
+        <a href="#vacancies">
+            <div class="navig">
+                <div class="black"></div>
+                <div class="sectionName">Vacancies</div>
+                <div class="vacancies sqr"></div>
+            </div>
+        </a>
+        <a href="#contacts">
+            <div class="navig">
+                <div class="black"></div>
+                <div class="sectionName">Contacts</div>
+                <div class="contacts sqr"></div>    
+            </div>
+        </a>
+    </aside>
+
+    <footer>
+        ©2021 <a href="https://www.instagram.com/sazdan98/">sazdan</a>
+    </footer>
+
+    <script src="./js/typed.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

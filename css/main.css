@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Press+Start+2P&display=swap');
+
+#beforeLoad {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 1001;
+}
+
+#beforeLoad .load {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    -webkit-animation: cssload-flip 3s infinite ease-in-out;
+            animation: cssload-flip 3s infinite ease-in-out;
+    background-color: #ffeb3b;
+}
+
+a:visited {
+    color: #fff; 
+}
+
+header {
+    margin: 50px 0;
+}
+
+.logo {
+    outline: none;
+    pointer-events: none;
+}
+
+.autotext, .typed-cursor {
+    margin-left: 15px;
+    margin-top: 20px;
+
+    font-family: 'Press Start 2P', cursive;    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.mainGame {
+    height: 60vh;
+    margin-bottom: 30px;
+}
+
+.mainGame > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.buy {
+    background: #E91E63;
+    position: absolute;
+    right: 15px;
+    top:0;
+
+    width: 50px;
+    height: 50px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.buy:hover {
+    background: #bb174d;
+}
+
+.buy img {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.description {
+    padding: 5px 10px;
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    margin-left: 15px;
+    max-width: 300px;
+    background: #000;
+    color: #fff;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: right;
+}
+
+
+.otherGames {
+    margin-bottom: 30px;
+}
+
+.gameMin {
+    position: relative;
+    height: calc(20vh - 20px);
+}
+
+.d-xl-none .gameMin {
+    height: 20vh;
+}
+
+.gameMin > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.gameMinName {
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 30px);
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 15px;
+    line-height: 20px;
+} 
+
+.row {
+    margin: 0 calc(var(--bs-gutter-x) * -1) !important;
+}
+
+.sectionHeader {
+    margin: 0 0 30px 0;
+}
+
+.newsColorLine {
+    background-color: #FFEB3B;
+    min-height: 50px;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    color: #000;
+    padding: 12px 20px 0 20px;
+    background: #fff;
+    min-height: 100%;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.newsPiece {
+    overflow: hidden;    
+    height: 280px;
+    margin-bottom: 30px;
+}
+
+.newsPiece a {
+    background-size: cover !important;
+    position: relative;
+    display:block;
+    height: 280px;
+    outline: none;
+    text-decoration: none;
+}
+
+.newsPiece .info {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  background-size: cover !important;
+}
+
+.newsPiece time {
+    font-family: 'Press Start 2P', cursive;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 10px;
+    color: rgba(0, 0, 0, 0.65);
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.newsPiece h3 {
+    background-color: #fff;
+    z-index: 10;
+}
+
+.newsPiece p {
+    display: none;
+    margin-top: 0;
+    color: #000;
+    font-family: "Covered By Your Grace";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+} 
+
+.newsPieceFooter {
+    position: relative;
+    margin-top: 0;
+    height: 18px;
+    background-color: #FFEB3B;
+    border-bottom: 2px solid #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.read {
+    margin-left: 5px;
+    font-family: 'Covered By Your Grace';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.black {
+    background: #000;
+    width: 0;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.info:hover > .newsPieceFooter .black {
+    width: calc(100% - 90px);
+}
+
+.talentsColorLine {
+    background-color: #2196F3;
+    min-height: 50px;
+}
+
+.talent {
+    margin-bottom: 30px;
+    height: 40vw;
+    max-height: 300px;
+}
+
+.talent img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.talent h3 {
+    position: absolute;
+    bottom: 15px;
+    background-color: #fff;
+    width: calc(100% - 30px);
+    min-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.blue {
+    width: 30px;
+    height: 30px;
+    background-color: #2196F3;
+    position: absolute;
+    right: 0;
+}
+
+.contactUsColorLine {
+    width: 100%;
+    background-color: rgb(76, 175, 80);
+    min-height: 50px;
+}
+
+.contactUs {
+    margin-bottom: 40px;
+}
+
+.contactUs .sectionHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.contactUs h2{
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.mail {
+    background-color: #4CAF50;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 15px 30px 15px;
+}
+
+.mail h2 {
+    background: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 33px;
+}
+
+.mail form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    margin-bottom: 10px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+
+.mail textarea {
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    resize: none;
+    height: 180px;
+    padding: 10px 15px;
+
+    font-family: Covered By Your Grace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+input {
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+    padding: 0 15px;
+
+    font-family: Covered By Your Grace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.mail input {
+    border: none;
+}
+
+button {
+    font-family: "Press Start 2P";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+
+    border: none;
+    width: 100%;
+    height: 50px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.mail button {
+    background-color: #000;
+}
+
+.social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.svgLogo {
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+
+.svgLogo:hover {
+    background-color: #4CAF50;
+}
+
+.Steam {
+    -webkit-mask: url("./../img/contactUs/steam-logo-svgrepo-com\ 1.svg") no-repeat center / contain;
+}
+
+.YouTube {
+    -webkit-mask: url("./../img/contactUs/youtube-svgrepo-com\ 1.svg") no-repeat center / contain;
+}
+
+.Twitter {
+    -webkit-mask: url("./../img/contactUs/twitter-svgrepo-com\ 1.svg") no-repeat center / contain;
+}
+
+.LinkedIn {
+    -webkit-mask: url("./../img/contactUs/linkedin-svgrepo-com\ 1.svg") no-repeat center / contain;
+}
+
+.Instagram {
+    -webkit-mask: url("./../img/contactUs/XMLID_13_.svg") no-repeat center / contain;
+}
+
+.Facebook {
+    -webkit-mask: url("./../img/contactUs/facebook.svg") no-repeat center / contain;
+}
+
+
+aside {
+    position: fixed;
+    left: 2vw;
+    top: calc(50% - 40px);
+}
+
+aside a, aside a:visited, aside a:link, aside a:active, aside a:hover {
+    text-decoration: none;
+}
+
+
+.navig {
+    width: 120px;
+    height: 20px;
+    font-family: Covered By Your Grace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+    position: relative;
+}
+
+.sectionName {
+    position: absolute;
+    right: 11px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+aside .black {
+    position: absolute;
+    right: 0;
+    height: 20px;
+}
+
+.current .sectionName {
+    color: white;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+}
+
+.current .black {
+    width: 100%;
+}
+
+.sqr {
+    width: 6px;
+    height: 6px;
+    margin-left: 5px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.games {
+    background-color: #E91E63;
+}
+
+.news {
+    background-color: #FFEB3B;
+}
+
+.vacancies {
+    background-color: #2196F3;
+}
+
+.contacts {
+    background-color: #4CAF50;
+}
+
+footer {
+    color: #000;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:visited {
+    color: #000; 
+}
+
+@-webkit-keyframes cssload-flip {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+                transform: rotateX(0deg) rotateY(0deg);
+        background-color: #ffeb3b;
+    }
+    25% {
+        -webkit-transform: rotateX(-180.1deg) rotateY(0deg);
+                transform: rotateX(-180.1deg) rotateY(0deg);
+        background-color: #e91e63;
+    }
+    50% {
+        -webkit-transform: rotateX(-180deg) rotateY(-179.9deg);
+                transform: rotateX(-180deg) rotateY(-179.9deg);
+        background-color: #4caf50;
+    }
+    75% {
+        -webkit-transform: rotateX(0deg) rotateY(-180deg);
+                transform: rotateX(0deg) rotateY(-180deg);
+        background-color: #2196f3
+    }
+}
+
+@keyframes cssload-flip {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+                transform: rotateX(0deg) rotateY(0deg);
+        background-color: #ffeb3b;
+    }
+    25% {
+        -webkit-transform: rotateX(-180.1deg) rotateY(0deg);
+                transform: rotateX(-180.1deg) rotateY(0deg);
+        background-color: #e91e63;
+    }
+    50% {
+        -webkit-transform: rotateX(-180deg) rotateY(-179.9deg);
+                transform: rotateX(-180deg) rotateY(-179.9deg);
+        background-color: #4caf50;
+    }
+    75% {
+        -webkit-transform: rotateX(0deg) rotateY(-180deg);
+                transform: rotateX(0deg) rotateY(-180deg);
+        background-color: #2196f3
+    }
+}
